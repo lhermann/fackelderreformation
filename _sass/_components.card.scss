@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #card
+   ========================================================================== */
+
+.c-card {
+    background-color: rgba($color-brand-primary, .9);
+    box-shadow: 0 10px 20px rgba($color-brand-dark, .2);
+    color: $color-brand-secondary;
+}
+
+    .c-card--h .c-card__img {
+        width: 17%;
+    }
+
+    .c-card__body {
+        position: relative;
+    }
+
+        .c-card__title {
+            color: $color-brand-light;
+
+            .c-card--h & {
+                margin: $unit 0 0;
+            }
+            .c-card--v & {
+                margin-bottom: -$unit / 2;
+            }
+        }
+
+        .c-card--h .c-card__meta {
+            font-size: 120%;
+            position: absolute;
+            top: $unit / 2;
+        }
